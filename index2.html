@@ -259,6 +259,16 @@
             visibility: hidden;
         }
 
+        .invitation-heading {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: #fefdf8;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
         /* Floating Elements */
         .floating-elements {
             position: absolute;
@@ -318,7 +328,7 @@
         }
         
         .person-image {
-            width: 200px;
+            width: 150px;
             height: 200px;
             border-radius: 50%;
             object-fit: cover;
@@ -514,7 +524,7 @@
         }
         
         .footer-text {
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'Tangerine', cursive;
             margin-bottom: 1rem;
         }
         
@@ -622,13 +632,12 @@
         <div class="floating-elements">
             <div class="floating-element" style="top: 20%; left: 10%; font-size: 2rem;">🌸</div>
             <div class="floating-element" style="top: 30%; left: 80%; font-size: 2rem;">🌺</div>
-            <div class="floating-element" style="top: 70%; left: 15%; font-size: 2rem;">💮</div>
+            <div class="floating-element" style="top: 70%; left: 15%; font-size: 2rem;">🍁</div>
             <div class="floating-element" style="top: 60%; left: 85%; font-size: 2rem;">🏵</div>
         </div>
         <div class="header-content">
-            
+             <h3 class="invitation-heading">Wedding Invitation</h3>
             <h1 class="names">Aishwarya &  Abhishek</h1>
-            
             <p class="save-the-date">Save the date</p>
             <p class="date">June 6, 2025</p>
         </div>
@@ -642,7 +651,7 @@
         <h2 class="section-title">The Couple</h2>
         <div class="couple-container">
             <div class="person">
-                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb" alt="Bride" class="person-image">
+                <img src="3M9A0757.JPG" alt="Bride" class="person-image">
                 <h3 class="person-name">Dr.Aishwarya Gade</h3>
                 <p class="person-title">The Bride</p>
             </div>
@@ -650,7 +659,7 @@
             <div class="and">&</div>
             
             <div class="person">
-                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d" alt="Groom" class="person-image">
+                <img src="3M9A0775.JPG" alt="Groom" class="person-image">
                 <h3 class="person-name">Dr.Abhishek Nande</h3>
                 <p class="person-title">The Groom</p>
             </div>
@@ -733,22 +742,28 @@
         <h2 class="section-title">Our Moments</h2>
         <div class="gallery-container">
             <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1518621736915-f3b1c41bfd00" alt="Couple Photo 1">
+                <img src="3M9A0803.JPG" alt="Couple Photo 1">
             </div>
             <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e" alt="Couple Photo 2">
+                <img src="3M9A0805.JPG" alt="Couple Photo 2">
             </div>
             <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e" alt="Couple Photo 3">
+                <img src="3M9A0747.JPG" alt="Couple Photo 3">
             </div>
             <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70" alt="Couple Photo 4">
+                <img src="3M9A0808.JPG" alt="Couple Photo 4">
             </div>
             <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1" alt="Couple Photo 5">
+                <img src="3M9A0819.JPG" alt="Couple Photo 5">
             </div>
             <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7" alt="Couple Photo 6">
+                <img src="3M9A1087.JPG" alt="Couple Photo 6">
+            </div>
+            <div class="gallery-item">
+                <img src="3M9A1062.JPG" alt="Couple Photo 6">
+            </div>
+            <div class="gallery-item">
+                <img src="3M9A0942.JPG" alt="Couple Photo 6">
             </div>
         </div>
     </section>
@@ -806,7 +821,7 @@
         // Add floating elements dynamically
         function createFloatingElements() {
             const container = document.querySelector('.floating-elements');
-            const symbols = ['🌸', '🌺', '💮', '🏵', '🌹', '🌻', '🌼', '🌷'];
+            const symbols = ['🌸', '🌺', '🍁', '🏵', '🌹', '🌻', '🌼', '🌷'];
             
             for (let i = 0; i < 15; i++) {
                 const element = document.createElement('div');
