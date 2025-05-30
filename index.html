@@ -191,83 +191,7 @@
             cursor: pointer;
         }
         
-    /* Loader */
-        .loader {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: var(--cream);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            z-index: 9999;
-            transition: opacity 0.5s, visibility 0.5s;
-        }
-
-        .loader p {
-            margin-top: 20px;
-            font-family: var(--font-special);
-            font-size: 1rem;
-            color: var(--maroon);
-        }
-
-        .diya {
-            width: 80px;
-            height: 80px;
-            position: relative;
-            margin-bottom: 20px;
-        }
-
-        .diya-base {
-            width: 80px;
-            height: 30px;
-            background-color: var(--gold);
-            border-radius: 50%;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .diya-flame {
-            width: 20px;
-            height: 40px;
-            background: linear-gradient(to top, #FFA500, #FF4500, #FF0000);
-            border-radius: 50% 50% 20% 20%;
-            position: absolute;
-            top: -30px;
-            left: 50%;
-            transform: translateX(-50%);
-            animation: flicker 2s infinite alternate;
-            box-shadow: 0 0 20px #FF4500;
-        }
-
-        @keyframes flicker {
-            0%, 100% {
-                transform: translateX(-50%) scale(1);
-                opacity: 1;
-            }
-            50% {
-                transform: translateX(-50%) scale(1.1);
-                opacity: 0.8;
-            }
-        }
-
-        .loader.hidden {
-            opacity: 0;
-            visibility: hidden;
-        }
-
-        .invitation-heading {
-    font-family: 'Playfair Display', serif;
-    font-size: 2rem;
-    color: #fefdf8;
-    letter-spacing: 2px;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-}
+    
 
         /* Floating Elements */
         .floating-elements {
@@ -618,14 +542,7 @@
     </style>
 </head>
 <body>
-    <!-- Loading Screen -->
-    <div class="loader">
-        <div class="diya">
-            <div class="diya-flame"></div>
-            <div class="diya-base"></div>
-        </div>
-        <p>Loading the celebrations...</p>
-    </div>
+   
 
     <!-- Header Section -->
     <section class="header" id="home">
@@ -804,11 +721,7 @@
   </script>
     
     <script>
-        // Loading Screen
-       window.addEventListener('load', function () {
-    const loader = document.querySelector('.loader');
-    loader.classList.add('hidden');
-});
+         
 
         // Smooth scrolling for navigation
         function scrollToSection(sectionId) {
