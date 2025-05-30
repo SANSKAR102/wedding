@@ -805,12 +805,10 @@
     
     <script>
         // Loading Screen
-        window.addEventListener('load', function() {
-            const loader = document.querySelector('.loader');
-            setTimeout(function() {
-                loader.classList.add('hidden');
-            }, 800);
-        });
+       window.addEventListener('load', function () {
+    const loader = document.querySelector('.loader');
+    loader.classList.add('hidden');
+});
 
         // Smooth scrolling for navigation
         function scrollToSection(sectionId) {
@@ -883,7 +881,7 @@
         
         
         // Initialize floating elements when page loads
-        window.addEventListener('load', createFloatingElements);
+        document.addEventListener('DOMContentLoaded', createFloatingElements);
         
         // Animate sections when they come into view
         const observer = new IntersectionObserver((entries) => {
